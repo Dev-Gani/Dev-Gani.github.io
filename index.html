@@ -3,91 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroNour</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #001f3f;
-            color: #FFFFF0;
-        }
-        .logo {
-            font-size: 2em;
-            font-weight: bold;
-            margin-left: 20px;
-        }
-        h1 {
-            font-size: 7em;
-            padding: 60px 0px;
-            text-align: left;
-            margin-left: 20px;
-        }
-        h2 {
-            font-size: 2em;
-            text-align: left;
-            margin-left: 20px;
-        }
-        h4 {
-            text-align: left;
-            margin-left: 20px;
-        }
-        nav {
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between; /* Layout-Änderung zur Verteilung der Elemente */
-        }
-        .status-button {
-            color: #FFFFF0;
-            background-color: #003366;
-            border: 2px solid #FFFFF0;
-            padding: 5px 10px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .status-button:hover {
-            background-color: #FFFFF0;
-            color: #003366;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-grow: 1;
-        }
-        nav ul li {
-            margin: 0;
-        }
-        nav ul li a {
-            color: #FFFFF0;
-            text-decoration: none;
-            font-size: 1.2em;
-             padding: 5px 10px; 
-             transition: background-color 0.3s, color 0.3s; 
-        }
-        nav ul li a:hover {
-             background-color: #FFFFF0; 
-             color: #003366;
-        }
-    </style>
+    <title>Startseite</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav>
-        <div class="logo">NN</div>
         <ul>
-            <li><a href="#ueber-uns">Über Uns</a></li>
-            <li><a href="#projekte">Projekte</a></li>
-            <li><a href="#impressum">Impressum</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="index.html"><strong>NN</strong></a></li>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über mich</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
         </ul>
-        <div class="status-button">Aktuelle Projekte ...</div>
     </nav>
-    <h1>NeuroNour</h1>
-    <h2>Wir bringen Licht ins Dunkel!<br>Neuro = Gehirn<br>Nour = Islamisch (arabisch) für Licht</h2>
-    <h4>Und Licht in deinem Herzen Bebe<br>Ich liebe dich ganz ganz gaaaanz viel mein Herz<br>G42423453254N<br>a42423453254i<br>n42423453254t<br>i42423453254a</h4>
+    <header>
+        <h1>Willkommen auf meiner Website</h1>
+        <p>Kurzbeschreibung oder Einleitungstext hier...</p>
+    </header>
+    <section class="banner">
+        <h2>Neuronour</h2>
+        <p>Unsere Motivation ist es, innovative und nachhaltige Lösungen zu schaffen, die die Welt verändern.</p>
+    </section>
+    <section>
+        <h2>Aktuelles Projekt</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="images/aktuelles-projekt.jpg" alt="Aktuelles Projekt">
+                    <h3>Aktuelles Projekt</h3>
+                    <p>Kurzbeschreibung des aktuellen Projekts. Hervorhebung der Hauptmerkmale und verwendeten Technologien.</p>
+                    <div class="marquee">
+                        <span>
+                            <i class="fab fa-react"></i> Next.js &nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <i class="fas fa-server"></i> FastAPI &nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <i class="fas fa-brain"></i> TensorFlow &nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <i class="fas fa-brain"></i> PyTorch &nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <i class="fas fa-brain"></i> scikit-learn &nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <i class="fas fa-code-branch"></i> LangChain &nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <i class="fas fa-cloud"></i> Google Cloud Platform (GCP)
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Kontaktiere mich</h2>
+        <p>Interessiert an einer Zusammenarbeit? Lass uns in Kontakt treten und gemeinsam etwas Großartiges schaffen!</p>
+        <button onclick="window.location.href='contact.html'">Kontaktformular öffnen</button>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

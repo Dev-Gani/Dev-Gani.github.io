@@ -1,0 +1,150 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #001f3f; /* Primärfarbe Dunkelblau */
+    margin: 0;
+    padding: 0;
+    color: white; /* Textfarbe geändert zu Weiß für bessere Lesbarkeit */
+}
+
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    background-color: #001f3f; /* Primärfarbe Dunkelblau */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFF0; /* Sekundärfarbe Elfenbein */
+    color: black; /* Textfarbe geändert zu Schwarz für bessere Lesbarkeit */
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #FFFFF0; /* Hintergrundfarbe Elfenbein */
+    color: black; /* Textfarbe geändert zu Schwarz für bessere Lesbarkeit */
+}
+
+button:hover {
+    background-color: #d4d4a8;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+.card {
+    background: #FFFFF0; /* Hintergrundfarbe Elfenbein */
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    color: black; /* Textfarbe geändert zu Schwarz */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #001f3f; /* Dunkelblau */
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.marquee span {
+    display: inline-block;
+    padding: 0 10px;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-size: 20px;
+}
+
+.marquee i {
+    margin-right: 8px;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+.cta {
+    background-color: #001f3f; /* Dunkelblau */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+/* Dezente Trennlinien für die Abschnitte */
+nav,
+header,
+section,
+.cta {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
