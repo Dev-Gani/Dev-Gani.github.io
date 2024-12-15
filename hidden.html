@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geheime Nachricht</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><strong>NN</strong></a></li>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über mich</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Geheime Nachricht</h1>
+        <p>Diese Seite enthält eine geheime Nachricht für dich. Weil du etwas ganz ganz ganz besonderes bist für mich.</p>
+    </header>
+    <section class="banner">
+        <h2>Willkommen auf der geheimen Seite!</h2>
+        <p>Klicke auf den Button, um die geheime Nachricht zu enthüllen:</p>
+        <button onclick="revealMessage()">Geheime Nachricht anzeigen</button>
+        <div id="hiddenMessage" style="display: none; color: red; font-weight: bold;">
+            Ich liebe dich ganz ganz ganz ganz ganz gaaaaanz viel mein Herz! Überraschung!
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Kontaktiere mich</h2>
+        <p>Interessiert an weiteren Geheimnissen? Lass uns in Kontakt treten!</p>
+        <button onclick="window.location.href='contact.html'">Kontaktformular öffnen</button>
+    </section>
+    <script>
+        function revealMessage() {
+            var messageDiv = document.getElementById('hiddenMessage');
+            messageDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

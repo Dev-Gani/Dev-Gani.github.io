@@ -22,16 +22,27 @@
         <p>Hier kannst du mich kontaktieren.</p>
     </header>
     <section>
-        <form action="mailto:dein-email@beispiel.com" method="post" enctype="text/plain">
+        <form onsubmit="return checkInput()" method="post" enctype="text/plain">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <!-- <input type="text" id="name" name="name" required> -->
+            <input type="text" id="name" name="name">
             <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+            <!-- <input type="email" id="email" name="email" required> -->
+            <input type="email" id="email" name="email">
             <label for="message">Nachricht:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             <button type="submit">Senden</button>
         </form>
     </section>
-    <script src="js/script.js"></script>
+    <script>
+        function checkInput() {
+            var message = document.getElementById('message').value;
+            if (message.includes("du bist mein herz")) {
+                window.location.href = 'hidden.html';
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
