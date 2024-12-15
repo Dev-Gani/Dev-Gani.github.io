@@ -37,7 +37,7 @@
     <script>
         function checkInput() {
             var message = document.getElementById('message').value;
-            if (message.includes("herz")) {
+            if (message.toLowerCase().includes("herz")) {
                 window.location.href = 'hidden.html';
                 return false;
             }
